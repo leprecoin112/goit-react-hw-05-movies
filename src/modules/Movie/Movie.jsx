@@ -16,7 +16,7 @@ function Movie() {
   const [movie, setMovie] = useState(null);
   const [error, setError] = useState(null);
 
-  const backLinkHref = location.state?.from ?? '/';
+  const backLinkHref = location.state?.from ?? '/goit-react-hw-05-movies/';
 
   const genresToString = useCallback(genres => {
     let string = '';

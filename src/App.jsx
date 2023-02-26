@@ -24,9 +24,15 @@ export const App = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/movies" element={<MoviesSearchPage />} />
-          <Route path="/movies/:movieId" element={<MoviePage />}>
+          <Route path="goit-react-hw-05-movies/" element={<HomePage />} />
+          <Route
+            path="goit-react-hw-05-movies/movies"
+            element={<MoviesSearchPage />}
+          />
+          <Route
+            path="goit-react-hw-05-movies/movies/:movieId"
+            element={<MoviePage />}
+          >
             <Route path="cast" element={<MovieCastPage />} />
             <Route path="reviews" element={<MovieReviewsPage />} />
           </Route>
