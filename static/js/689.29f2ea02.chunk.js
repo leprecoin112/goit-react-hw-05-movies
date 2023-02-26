@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[689],{5689:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var o="NotFoundPage_section__LXYbu",r=n(184);var a=function(){return(0,r.jsx)("main",{children:(0,r.jsx)("section",{className:o,children:(0,r.jsx)("img",{width:500,src:"/goit-react-hw-05-movies/not_found.jpg",alt:"not found"})})})}}}]);
+//# sourceMappingURL=689.29f2ea02.chunk.js.map

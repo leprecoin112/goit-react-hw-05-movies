@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/689.0c51a898.chunk.css","mappings":"AAAA,6BAGC,mBAFA,aAGA,aAFA,sBAEA","sources":["pages/common/NotFoundPage/NotFoundPage.module.scss"],"sourcesContent":[".section {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: center;\n\theight: 100vh;\n}"],"names":[],"sourceRoot":""}
