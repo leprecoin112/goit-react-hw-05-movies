@@ -1,4 +1,5 @@
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
+import { memo } from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { getMovieById } from 'shared/services/TheMovieAPI';
 import MovieDetails from './MovieDetails/MovieDetails';
@@ -12,9 +13,10 @@ export const BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 function Movie() {
   const { movieId } = useParams();
-  const location = useLocation();
+
   const [movie, setMovie] = useState(null);
   const [error, setError] = useState(null);
+  const location = useLocation();
 
   const backLinkHref = location.state?.from ?? '/goit-react-hw-05-movies/';
 
@@ -68,4 +70,4 @@ function Movie() {
   );
 }
 
-export default Movie;
+export default memo(Movie);

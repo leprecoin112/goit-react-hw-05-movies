@@ -30,7 +30,7 @@ MovieDetails.propTypes = {
   posterPath: PropTypes.string,
   title: PropTypes.string,
   releaseDate: PropTypes.string,
-  voteAverage: PropTypes.string,
+  voteAverage: PropTypes.number,
   overview: PropTypes.string,
   genres: PropTypes.string,
 };

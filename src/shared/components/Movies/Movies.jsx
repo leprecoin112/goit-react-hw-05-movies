@@ -18,7 +18,7 @@ function Movies({ movies, location, locationTo }) {
 
 Movies.propTypes = {
   movies: PropTypes.arrayOf(Object),
-  location: PropTypes.string,
+  location: PropTypes.object,
   locationTo: PropTypes.string,
 };
 
