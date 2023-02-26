@@ -4,7 +4,7 @@ function MoviesSearchPage() {
   return (
     <main>
       <section>
-        <MoviesSearch />;
+        <MoviesSearch />
       </section>
     </main>
   );
