@@ -1,0 +1,25 @@
+.NavBar{
+	background-color: #ecf0f1;
+}
+
+.NavBarList{
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+.Link{
+	text-decoration: none;
+	color: #2c3e50;
+	padding: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.Link:hover{
+	color: #C75D70;
+}
+
+.Link:global(.active) {
+	color: #C75D70;
+}

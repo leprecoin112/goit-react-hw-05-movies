@@ -1,0 +1,18 @@
+.moviesItem {
+	width: calc((100% - 20px) / 4);
+}
+
+.moviesLink {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	color: #2c3e50;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+		transition: transform cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	}
+}

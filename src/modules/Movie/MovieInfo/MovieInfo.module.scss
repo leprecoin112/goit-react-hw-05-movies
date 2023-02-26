@@ -1,0 +1,22 @@
+.ListLink{
+	display: flex;
+	gap: 20px;
+}
+
+.link {
+	display: inline-block;
+	text-decoration: none;
+	color: #2c3e50;
+	padding: 20px 0 20px 20px;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.link:hover {
+	color: #C75D70;
+}
+
+.link:global(.active) {
+	color: #C75D70;
+}
