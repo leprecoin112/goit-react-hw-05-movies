@@ -20,11 +20,11 @@ function Movie() {
 
   const backLinkHref = location.state?.from ?? '/goit-react-hw-05-movies/';
 
-  const genresToString = useCallback(genres => {
+  const genresToString = genres => {
     let string = '';
     genres.map(({ name }) => (string += name + ' '));
     return string.trim();
-  }, []);
+  };
 
   useEffect(() => {
     const fetchMovieById = async id => {
