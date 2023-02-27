@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { getTrendingMovies } from 'shared/services/TheMovieAPI';
 import { useLocation } from 'react-router-dom';
+import { getTrendingMovies } from 'shared/services/TheMovieAPI';
 import Movies from 'shared/components/Movies/Movies';
 
-function TrendMovies() {
+function TrendMoviesPage() {
   const [movies, setMovies] = useState([]);
   const location = useLocation();
 
@@ -21,12 +21,14 @@ function TrendMovies() {
   }, []);
 
   return (
-    <>
-      {movies.length !== 0 && (
-        <Movies movies={movies} location={location} locationTo="movies/" />
-      )}
-    </>
+    <main>
+      <section>
+        {movies.length !== 0 && (
+          <Movies movies={movies} location={location} locationTo="movies/" />
+        )}
+      </section>
+    </main>
   );
 }
 
-export default TrendMovies;
+export default TrendMoviesPage;

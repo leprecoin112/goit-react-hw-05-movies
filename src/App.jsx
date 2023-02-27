@@ -6,7 +6,9 @@ import styles from './shared/styles/App.module.scss';
 import Header from 'pages/common/Header';
 import Loader from 'shared/components/Loader/Loader';
 
-const HomePage = lazy(() => import('pages/HomePage/HomePage'));
+const TrendMoviesPage = lazy(() =>
+  import('pages/TrendMoviesPage/TrendMoviesPage')
+);
 const NotFoundPage = lazy(() =>
   import('pages/common/NotFoundPage/NotFoundPage')
 );
@@ -24,7 +26,10 @@ export const App = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="goit-react-hw-05-movies/" element={<HomePage />} />
+          <Route
+            path="goit-react-hw-05-movies/"
+            element={<TrendMoviesPage />}
+          />
           <Route
             path="goit-react-hw-05-movies/movies"
             element={<MoviesSearchPage />}
